@@ -1,20 +1,21 @@
 # ninja log v7
-73	1348	8045179345517160	CMakeFiles/app.dir/models/Task.cpp.obj	53147c746112ea98
-127	1541	8045179346055890	CMakeFiles/app.dir/src/TaskManager.cpp.obj	ce0bf2f0084a78bf
-20	16475	8045216496507739	CMakeFiles/app.dir/main.cpp.obj	b877f07b874bf83e
-180	28056	8045179346596106	CMakeFiles/app.dir/routes/TaskRoutes.cpp.obj	3be9ac093e937d21
-18426	20946	8045229505427633	app.exe	7cea43984dc08fd2
-8	510	8045246784461445	build.ninja	be233f337695dc11
-8	510	8045246784341380	C:/Users/Avisha Srivastava/last-minute-life-saver/backend-cpp/build/cmake_install.cmake	be233f337695dc11
-249	25932	8045179347287074	CMakeFiles/app.dir/routes/AnalyticsRoutes.cpp.obj	64d0dfb2ea5a114a
-313	26914	8045179347917484	CMakeFiles/app.dir/routes/UpdateTaskRoutes.cpp.obj	ff24a14a59b615c5
-127	1202	8045210911655255	CMakeFiles/app.dir/services/PriorityEngine.cpp.obj	d706f4e0940f0d33
-13	18425	8045229321340733	CMakeFiles/app.dir/routes/PriorityRoutes.cpp.obj	70692698a02a3272
-260	1220	8045210912988711	CMakeFiles/app.dir/services/RiskAnalyzer.cpp.obj	342ea43fde8482d0
-200	1547	8045210912383649	CMakeFiles/app.dir/utils/DateUtils.cpp.obj	877173e1dd92211
-60	902	8045229321800798	CMakeFiles/app.dir/services/RecommendationEngine.cpp.obj	c1f3eaa67e54fc93
-16	545	8045246784461445	build.ninja	be233f337695dc11
-16	545	8045246784461445	C:/Users/Avisha Srivastava/last-minute-life-saver/backend-cpp/build/cmake_install.cmake	be233f337695dc11
-15	15823	8045246785400849	CMakeFiles/app.dir/main.cpp.obj	b877f07b874bf83e
-80	18304	8045246786130900	CMakeFiles/app.dir/routes/PlannerRoutes.cpp.obj	48ad7bae0c27464f
-18305	21002	8045246968295174	app.exe	513168685bc27a96
+56	1370	8045277134544383	CMakeFiles/app.dir/models/Task.cpp.obj	d11b0eb665a142bb
+95	1500	8045277134924677	CMakeFiles/app.dir/src/TaskManager.cpp.obj	40f9c269988ffe39
+16	24394	8045277134134380	CMakeFiles/app.dir/main.cpp.obj	233a28e9e2fb851e
+149	28670	8045277135464772	CMakeFiles/app.dir/routes/TaskRoutes.cpp.obj	e86b00e9f3580dec
+21472	24828	8045292025211550	app.exe	2835bd95f4e4db5c
+5	443	8045293546478724	build.ninja	be233f337695dc11
+5	443	8045293546368865	C:/Users/Avisha Srivastava/last-minute-life-saver/backend-cpp/build/cmake_install.cmake	be233f337695dc11
+218	27226	8045277136150014	CMakeFiles/app.dir/routes/AnalyticsRoutes.cpp.obj	dd4afc919513ca1d
+293	28168	8045277136910211	CMakeFiles/app.dir/routes/UpdateTaskRoutes.cpp.obj	ef8d8807af78281d
+602	2038	8045277139991476	CMakeFiles/app.dir/services/PriorityEngine.cpp.obj	acf71b06c6dae126
+349	28234	8045277137465685	CMakeFiles/app.dir/routes/PriorityRoutes.cpp.obj	8f80aa7bd5672acd
+735	2125	8045277141326980	CMakeFiles/app.dir/services/RiskAnalyzer.cpp.obj	8d357a9c3e0bc210
+669	2502	8045277140671531	CMakeFiles/app.dir/utils/DateUtils.cpp.obj	cb8eff48c9a36f83
+824	2130	8045277142212413	CMakeFiles/app.dir/services/RecommendationEngine.cpp.obj	36bce5a44071d3a5
+17	20556	8045286882028099	CMakeFiles/app.dir/routes/PlannerRoutes.cpp.obj	27d4b9ec21cda71b
+17	21470	8045291810667202	CMakeFiles/app.dir/services/GeminiService.cpp.obj	7d65cfa8e34947
+17	21637	8045294472198643	CMakeFiles/app.dir/services/GeminiService.cpp.obj	7d65cfa8e34947
+21639	24786	8045294688509642	app.exe	2835bd95f4e4db5c
+18	29685	8045303354470187	CMakeFiles/app.dir/services/GeminiService.cpp.obj	7d65cfa8e34947
+29688	33508	8045303651193435	app.exe	2835bd95f4e4db5c

@@ -4,6 +4,8 @@
 #include "../services/RiskAnalyzer.h"
 #include "../services/RecommendationEngine.h"
 #include "../utils/DateUtils.h"
+#include "../services/GeminiService.h"
+
 
 #include <algorithm>
 using json = nlohmann::json;
@@ -47,8 +49,10 @@ void registerPlannerRoutes(
             startHour = endHour + 1;
         }
 
+        string aiPlan = GeminiService::generateDayPlan(tasks);
         json response = {
-            {"message", "Your day has been planned based on task priority and deadline risk."},
+            {"message", "Generated personalized AI plan using Gemini."},
+            {"aiPlan", aiPlan},
             {"plan", plan}
         };
 

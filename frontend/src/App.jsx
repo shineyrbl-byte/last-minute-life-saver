@@ -17,6 +17,7 @@ function App() {
   const [analytics, setAnalytics] = useState({});
   const [priority, setPriority] = useState([]);
   const [dayPlan, setDayPlan] = useState(null);
+  const [aiPlan, setAiPlan] = useState("");
 
 
   const [form, setForm] = useState({

@@ -1,6 +1,7 @@
 cmake_minimum_required(VERSION 3.20)
 
 project(LastMinuteLifeSaver)
+find_package(OpenSSL REQUIRED)
 
 set(CMAKE_CXX_STANDARD 17)
 
@@ -17,6 +18,7 @@ add_executable(app
     services/RiskAnalyzer.cpp
     services/RecommendationEngine.cpp
     routes/PlannerRoutes.cpp
+    services/GeminiService.cpp
 )
 
 target_include_directories(app PRIVATE
@@ -26,6 +28,7 @@ target_include_directories(app PRIVATE
     src
 )
 
+target_compile_definitions(app PRIVATE CPPHTTPLIB_OPENSSL_SUPPORT)
 if(WIN32)
-    target_link_libraries(app ws2_32)
+    target_link_libraries(app ws2_32 crypt32 OpenSSL::SSL OpenSSL::Crypto)
 endif()

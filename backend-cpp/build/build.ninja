@@ -45,6 +45,7 @@ cmake_ninja_workdir = C$:/Users/Avisha$ Srivastava/last-minute-life-saver/backen
 build cmake_object_order_depends_target_app: phony || .
 
 build CMakeFiles/app.dir/main.cpp.obj: CXX_COMPILER__app_unscanned_ C$:/Users/Avisha$ Srivastava/last-minute-life-saver/backend-cpp/main.cpp || cmake_object_order_depends_target_app
+  DEFINES = -DCPPHTTPLIB_OPENSSL_SUPPORT
   DEP_FILE = CMakeFiles\app.dir\main.cpp.obj.d
   FLAGS = -std=gnu++17
   INCLUDES = -I"C:/Users/Avisha Srivastava/last-minute-life-saver/backend-cpp/include" -I"C:/Users/Avisha Srivastava/last-minute-life-saver/backend-cpp/models" -I"C:/Users/Avisha Srivastava/last-minute-life-saver/backend-cpp/routes" -I"C:/Users/Avisha Srivastava/last-minute-life-saver/backend-cpp/src"
@@ -53,6 +54,7 @@ build CMakeFiles/app.dir/main.cpp.obj: CXX_COMPILER__app_unscanned_ C$:/Users/Av
   TARGET_SUPPORT_DIR = CMakeFiles\app.dir
 
 build CMakeFiles/app.dir/models/Task.cpp.obj: CXX_COMPILER__app_unscanned_ C$:/Users/Avisha$ Srivastava/last-minute-life-saver/backend-cpp/models/Task.cpp || cmake_object_order_depends_target_app
+  DEFINES = -DCPPHTTPLIB_OPENSSL_SUPPORT
   DEP_FILE = CMakeFiles\app.dir\models\Task.cpp.obj.d
   FLAGS = -std=gnu++17
   INCLUDES = -I"C:/Users/Avisha Srivastava/last-minute-life-saver/backend-cpp/include" -I"C:/Users/Avisha Srivastava/last-minute-life-saver/backend-cpp/models" -I"C:/Users/Avisha Srivastava/last-minute-life-saver/backend-cpp/routes" -I"C:/Users/Avisha Srivastava/last-minute-life-saver/backend-cpp/src"
@@ -61,6 +63,7 @@ build CMakeFiles/app.dir/models/Task.cpp.obj: CXX_COMPILER__app_unscanned_ C$:/U
   TARGET_SUPPORT_DIR = CMakeFiles\app.dir
 
 build CMakeFiles/app.dir/src/TaskManager.cpp.obj: CXX_COMPILER__app_unscanned_ C$:/Users/Avisha$ Srivastava/last-minute-life-saver/backend-cpp/src/TaskManager.cpp || cmake_object_order_depends_target_app
+  DEFINES = -DCPPHTTPLIB_OPENSSL_SUPPORT
   DEP_FILE = CMakeFiles\app.dir\src\TaskManager.cpp.obj.d
   FLAGS = -std=gnu++17
   INCLUDES = -I"C:/Users/Avisha Srivastava/last-minute-life-saver/backend-cpp/include" -I"C:/Users/Avisha Srivastava/last-minute-life-saver/backend-cpp/models" -I"C:/Users/Avisha Srivastava/last-minute-life-saver/backend-cpp/routes" -I"C:/Users/Avisha Srivastava/last-minute-life-saver/backend-cpp/src"
@@ -69,6 +72,7 @@ build CMakeFiles/app.dir/src/TaskManager.cpp.obj: CXX_COMPILER__app_unscanned_ C
   TARGET_SUPPORT_DIR = CMakeFiles\app.dir
 
 build CMakeFiles/app.dir/routes/TaskRoutes.cpp.obj: CXX_COMPILER__app_unscanned_ C$:/Users/Avisha$ Srivastava/last-minute-life-saver/backend-cpp/routes/TaskRoutes.cpp || cmake_object_order_depends_target_app
+  DEFINES = -DCPPHTTPLIB_OPENSSL_SUPPORT
   DEP_FILE = CMakeFiles\app.dir\routes\TaskRoutes.cpp.obj.d
   FLAGS = -std=gnu++17
   INCLUDES = -I"C:/Users/Avisha Srivastava/last-minute-life-saver/backend-cpp/include" -I"C:/Users/Avisha Srivastava/last-minute-life-saver/backend-cpp/models" -I"C:/Users/Avisha Srivastava/last-minute-life-saver/backend-cpp/routes" -I"C:/Users/Avisha Srivastava/last-minute-life-saver/backend-cpp/src"
@@ -77,6 +81,7 @@ build CMakeFiles/app.dir/routes/TaskRoutes.cpp.obj: CXX_COMPILER__app_unscanned_
   TARGET_SUPPORT_DIR = CMakeFiles\app.dir
 
 build CMakeFiles/app.dir/routes/AnalyticsRoutes.cpp.obj: CXX_COMPILER__app_unscanned_ C$:/Users/Avisha$ Srivastava/last-minute-life-saver/backend-cpp/routes/AnalyticsRoutes.cpp || cmake_object_order_depends_target_app
+  DEFINES = -DCPPHTTPLIB_OPENSSL_SUPPORT
   DEP_FILE = CMakeFiles\app.dir\routes\AnalyticsRoutes.cpp.obj.d
   FLAGS = -std=gnu++17
   INCLUDES = -I"C:/Users/Avisha Srivastava/last-minute-life-saver/backend-cpp/include" -I"C:/Users/Avisha Srivastava/last-minute-life-saver/backend-cpp/models" -I"C:/Users/Avisha Srivastava/last-minute-life-saver/backend-cpp/routes" -I"C:/Users/Avisha Srivastava/last-minute-life-saver/backend-cpp/src"
@@ -85,6 +90,7 @@ build CMakeFiles/app.dir/routes/AnalyticsRoutes.cpp.obj: CXX_COMPILER__app_unsca
   TARGET_SUPPORT_DIR = CMakeFiles\app.dir
 
 build CMakeFiles/app.dir/routes/UpdateTaskRoutes.cpp.obj: CXX_COMPILER__app_unscanned_ C$:/Users/Avisha$ Srivastava/last-minute-life-saver/backend-cpp/routes/UpdateTaskRoutes.cpp || cmake_object_order_depends_target_app
+  DEFINES = -DCPPHTTPLIB_OPENSSL_SUPPORT
   DEP_FILE = CMakeFiles\app.dir\routes\UpdateTaskRoutes.cpp.obj.d
   FLAGS = -std=gnu++17
   INCLUDES = -I"C:/Users/Avisha Srivastava/last-minute-life-saver/backend-cpp/include" -I"C:/Users/Avisha Srivastava/last-minute-life-saver/backend-cpp/models" -I"C:/Users/Avisha Srivastava/last-minute-life-saver/backend-cpp/routes" -I"C:/Users/Avisha Srivastava/last-minute-life-saver/backend-cpp/src"
@@ -93,6 +99,7 @@ build CMakeFiles/app.dir/routes/UpdateTaskRoutes.cpp.obj: CXX_COMPILER__app_unsc
   TARGET_SUPPORT_DIR = CMakeFiles\app.dir
 
 build CMakeFiles/app.dir/routes/PriorityRoutes.cpp.obj: CXX_COMPILER__app_unscanned_ C$:/Users/Avisha$ Srivastava/last-minute-life-saver/backend-cpp/routes/PriorityRoutes.cpp || cmake_object_order_depends_target_app
+  DEFINES = -DCPPHTTPLIB_OPENSSL_SUPPORT
   DEP_FILE = CMakeFiles\app.dir\routes\PriorityRoutes.cpp.obj.d
   FLAGS = -std=gnu++17
   INCLUDES = -I"C:/Users/Avisha Srivastava/last-minute-life-saver/backend-cpp/include" -I"C:/Users/Avisha Srivastava/last-minute-life-saver/backend-cpp/models" -I"C:/Users/Avisha Srivastava/last-minute-life-saver/backend-cpp/routes" -I"C:/Users/Avisha Srivastava/last-minute-life-saver/backend-cpp/src"
@@ -101,6 +108,7 @@ build CMakeFiles/app.dir/routes/PriorityRoutes.cpp.obj: CXX_COMPILER__app_unscan
   TARGET_SUPPORT_DIR = CMakeFiles\app.dir
 
 build CMakeFiles/app.dir/services/PriorityEngine.cpp.obj: CXX_COMPILER__app_unscanned_ C$:/Users/Avisha$ Srivastava/last-minute-life-saver/backend-cpp/services/PriorityEngine.cpp || cmake_object_order_depends_target_app
+  DEFINES = -DCPPHTTPLIB_OPENSSL_SUPPORT
   DEP_FILE = CMakeFiles\app.dir\services\PriorityEngine.cpp.obj.d
   FLAGS = -std=gnu++17
   INCLUDES = -I"C:/Users/Avisha Srivastava/last-minute-life-saver/backend-cpp/include" -I"C:/Users/Avisha Srivastava/last-minute-life-saver/backend-cpp/models" -I"C:/Users/Avisha Srivastava/last-minute-life-saver/backend-cpp/routes" -I"C:/Users/Avisha Srivastava/last-minute-life-saver/backend-cpp/src"
@@ -109,6 +117,7 @@ build CMakeFiles/app.dir/services/PriorityEngine.cpp.obj: CXX_COMPILER__app_unsc
   TARGET_SUPPORT_DIR = CMakeFiles\app.dir
 
 build CMakeFiles/app.dir/utils/DateUtils.cpp.obj: CXX_COMPILER__app_unscanned_ C$:/Users/Avisha$ Srivastava/last-minute-life-saver/backend-cpp/utils/DateUtils.cpp || cmake_object_order_depends_target_app
+  DEFINES = -DCPPHTTPLIB_OPENSSL_SUPPORT
   DEP_FILE = CMakeFiles\app.dir\utils\DateUtils.cpp.obj.d
   FLAGS = -std=gnu++17
   INCLUDES = -I"C:/Users/Avisha Srivastava/last-minute-life-saver/backend-cpp/include" -I"C:/Users/Avisha Srivastava/last-minute-life-saver/backend-cpp/models" -I"C:/Users/Avisha Srivastava/last-minute-life-saver/backend-cpp/routes" -I"C:/Users/Avisha Srivastava/last-minute-life-saver/backend-cpp/src"
@@ -117,6 +126,7 @@ build CMakeFiles/app.dir/utils/DateUtils.cpp.obj: CXX_COMPILER__app_unscanned_ C
   TARGET_SUPPORT_DIR = CMakeFiles\app.dir
 
 build CMakeFiles/app.dir/services/RiskAnalyzer.cpp.obj: CXX_COMPILER__app_unscanned_ C$:/Users/Avisha$ Srivastava/last-minute-life-saver/backend-cpp/services/RiskAnalyzer.cpp || cmake_object_order_depends_target_app
+  DEFINES = -DCPPHTTPLIB_OPENSSL_SUPPORT
   DEP_FILE = CMakeFiles\app.dir\services\RiskAnalyzer.cpp.obj.d
   FLAGS = -std=gnu++17
   INCLUDES = -I"C:/Users/Avisha Srivastava/last-minute-life-saver/backend-cpp/include" -I"C:/Users/Avisha Srivastava/last-minute-life-saver/backend-cpp/models" -I"C:/Users/Avisha Srivastava/last-minute-life-saver/backend-cpp/routes" -I"C:/Users/Avisha Srivastava/last-minute-life-saver/backend-cpp/src"
@@ -125,6 +135,7 @@ build CMakeFiles/app.dir/services/RiskAnalyzer.cpp.obj: CXX_COMPILER__app_unscan
   TARGET_SUPPORT_DIR = CMakeFiles\app.dir
 
 build CMakeFiles/app.dir/services/RecommendationEngine.cpp.obj: CXX_COMPILER__app_unscanned_ C$:/Users/Avisha$ Srivastava/last-minute-life-saver/backend-cpp/services/RecommendationEngine.cpp || cmake_object_order_depends_target_app
+  DEFINES = -DCPPHTTPLIB_OPENSSL_SUPPORT
   DEP_FILE = CMakeFiles\app.dir\services\RecommendationEngine.cpp.obj.d
   FLAGS = -std=gnu++17
   INCLUDES = -I"C:/Users/Avisha Srivastava/last-minute-life-saver/backend-cpp/include" -I"C:/Users/Avisha Srivastava/last-minute-life-saver/backend-cpp/models" -I"C:/Users/Avisha Srivastava/last-minute-life-saver/backend-cpp/routes" -I"C:/Users/Avisha Srivastava/last-minute-life-saver/backend-cpp/src"
@@ -133,11 +144,21 @@ build CMakeFiles/app.dir/services/RecommendationEngine.cpp.obj: CXX_COMPILER__ap
   TARGET_SUPPORT_DIR = CMakeFiles\app.dir
 
 build CMakeFiles/app.dir/routes/PlannerRoutes.cpp.obj: CXX_COMPILER__app_unscanned_ C$:/Users/Avisha$ Srivastava/last-minute-life-saver/backend-cpp/routes/PlannerRoutes.cpp || cmake_object_order_depends_target_app
+  DEFINES = -DCPPHTTPLIB_OPENSSL_SUPPORT
   DEP_FILE = CMakeFiles\app.dir\routes\PlannerRoutes.cpp.obj.d
   FLAGS = -std=gnu++17
   INCLUDES = -I"C:/Users/Avisha Srivastava/last-minute-life-saver/backend-cpp/include" -I"C:/Users/Avisha Srivastava/last-minute-life-saver/backend-cpp/models" -I"C:/Users/Avisha Srivastava/last-minute-life-saver/backend-cpp/routes" -I"C:/Users/Avisha Srivastava/last-minute-life-saver/backend-cpp/src"
   OBJECT_DIR = CMakeFiles\app.dir
   OBJECT_FILE_DIR = CMakeFiles\app.dir\routes
+  TARGET_SUPPORT_DIR = CMakeFiles\app.dir
+
+build CMakeFiles/app.dir/services/GeminiService.cpp.obj: CXX_COMPILER__app_unscanned_ C$:/Users/Avisha$ Srivastava/last-minute-life-saver/backend-cpp/services/GeminiService.cpp || cmake_object_order_depends_target_app
+  DEFINES = -DCPPHTTPLIB_OPENSSL_SUPPORT
+  DEP_FILE = CMakeFiles\app.dir\services\GeminiService.cpp.obj.d
+  FLAGS = -std=gnu++17
+  INCLUDES = -I"C:/Users/Avisha Srivastava/last-minute-life-saver/backend-cpp/include" -I"C:/Users/Avisha Srivastava/last-minute-life-saver/backend-cpp/models" -I"C:/Users/Avisha Srivastava/last-minute-life-saver/backend-cpp/routes" -I"C:/Users/Avisha Srivastava/last-minute-life-saver/backend-cpp/src"
+  OBJECT_DIR = CMakeFiles\app.dir
+  OBJECT_FILE_DIR = CMakeFiles\app.dir\services
   TARGET_SUPPORT_DIR = CMakeFiles\app.dir
 
 
@@ -148,8 +169,8 @@ build CMakeFiles/app.dir/routes/PlannerRoutes.cpp.obj: CXX_COMPILER__app_unscann
 #############################################
 # Link the executable app.exe
 
-build app.exe: CXX_EXECUTABLE_LINKER__app_ CMakeFiles/app.dir/main.cpp.obj CMakeFiles/app.dir/models/Task.cpp.obj CMakeFiles/app.dir/src/TaskManager.cpp.obj CMakeFiles/app.dir/routes/TaskRoutes.cpp.obj CMakeFiles/app.dir/routes/AnalyticsRoutes.cpp.obj CMakeFiles/app.dir/routes/UpdateTaskRoutes.cpp.obj CMakeFiles/app.dir/routes/PriorityRoutes.cpp.obj CMakeFiles/app.dir/services/PriorityEngine.cpp.obj CMakeFiles/app.dir/utils/DateUtils.cpp.obj CMakeFiles/app.dir/services/RiskAnalyzer.cpp.obj CMakeFiles/app.dir/services/RecommendationEngine.cpp.obj CMakeFiles/app.dir/routes/PlannerRoutes.cpp.obj
-  LINK_LIBRARIES = -lws2_32  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
+build app.exe: CXX_EXECUTABLE_LINKER__app_ CMakeFiles/app.dir/main.cpp.obj CMakeFiles/app.dir/models/Task.cpp.obj CMakeFiles/app.dir/src/TaskManager.cpp.obj CMakeFiles/app.dir/routes/TaskRoutes.cpp.obj CMakeFiles/app.dir/routes/AnalyticsRoutes.cpp.obj CMakeFiles/app.dir/routes/UpdateTaskRoutes.cpp.obj CMakeFiles/app.dir/routes/PriorityRoutes.cpp.obj CMakeFiles/app.dir/services/PriorityEngine.cpp.obj CMakeFiles/app.dir/utils/DateUtils.cpp.obj CMakeFiles/app.dir/services/RiskAnalyzer.cpp.obj CMakeFiles/app.dir/services/RecommendationEngine.cpp.obj CMakeFiles/app.dir/routes/PlannerRoutes.cpp.obj CMakeFiles/app.dir/services/GeminiService.cpp.obj | C$:/msys64/ucrt64/lib/libssl.dll.a C$:/msys64/ucrt64/lib/libcrypto.dll.a
+  LINK_LIBRARIES = -lws2_32  -lcrypt32  C:/msys64/ucrt64/lib/libssl.dll.a  C:/msys64/ucrt64/lib/libcrypto.dll.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\app.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
@@ -203,14 +224,14 @@ build all: phony app.exe
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja C$:/Users/Avisha$ Srivastava/last-minute-life-saver/backend-cpp/build/cmake_install.cmake: RERUN_CMAKE | C$:/Users/Avisha$ Srivastava/last-minute-life-saver/backend-cpp/CMakeLists.txt C$:/msys64/ucrt64/share/cmake/Modules/CMakeCInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeCXXInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeCommonLanguageInclude.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeGenericSystem.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeInitializeConfigs.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeLanguageInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeRCInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeSystemSpecificInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/GNU-C.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/GNU-CXX.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/Internal/CMakeCLinkerInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/Linker/GNU-C.cmake C$:/msys64/ucrt64/share/cmake/Modules/Linker/GNU-CXX.cmake C$:/msys64/ucrt64/share/cmake/Modules/Linker/GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Linker/GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Linker/Windows-GNU-C.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Linker/Windows-GNU-CXX.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Linker/Windows-GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-C.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-CXX.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-Initialize.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-windres.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/4.3.4/CMakeCCompiler.cmake CMakeFiles/4.3.4/CMakeCXXCompiler.cmake CMakeFiles/4.3.4/CMakeRCCompiler.cmake CMakeFiles/4.3.4/CMakeSystem.cmake
+build build.ninja C$:/Users/Avisha$ Srivastava/last-minute-life-saver/backend-cpp/build/cmake_install.cmake: RERUN_CMAKE | C$:/Users/Avisha$ Srivastava/last-minute-life-saver/backend-cpp/CMakeLists.txt C$:/msys64/ucrt64/share/cmake/Modules/CMakeCInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeCXXInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeCommonLanguageInclude.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeGenericSystem.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeInitializeConfigs.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeLanguageInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeRCInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeSystemSpecificInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/GNU-C.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/GNU-CXX.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/FindOpenSSL.cmake C$:/msys64/ucrt64/share/cmake/Modules/FindPackageHandleStandardArgs.cmake C$:/msys64/ucrt64/share/cmake/Modules/FindPackageMessage.cmake C$:/msys64/ucrt64/share/cmake/Modules/Internal/CMakeCLinkerInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/Linker/GNU-C.cmake C$:/msys64/ucrt64/share/cmake/Modules/Linker/GNU-CXX.cmake C$:/msys64/ucrt64/share/cmake/Modules/Linker/GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Linker/GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Linker/Windows-GNU-C.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Linker/Windows-GNU-CXX.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Linker/Windows-GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-C.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-CXX.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-Initialize.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-windres.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/4.3.4/CMakeCCompiler.cmake CMakeFiles/4.3.4/CMakeCXXCompiler.cmake CMakeFiles/4.3.4/CMakeRCCompiler.cmake CMakeFiles/4.3.4/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:/Users/Avisha$ Srivastava/last-minute-life-saver/backend-cpp/CMakeLists.txt C$:/msys64/ucrt64/share/cmake/Modules/CMakeCInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeCXXInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeCommonLanguageInclude.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeGenericSystem.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeInitializeConfigs.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeLanguageInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeRCInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeSystemSpecificInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/GNU-C.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/GNU-CXX.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/Internal/CMakeCLinkerInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/Linker/GNU-C.cmake C$:/msys64/ucrt64/share/cmake/Modules/Linker/GNU-CXX.cmake C$:/msys64/ucrt64/share/cmake/Modules/Linker/GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Linker/GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Linker/Windows-GNU-C.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Linker/Windows-GNU-CXX.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Linker/Windows-GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-C.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-CXX.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-Initialize.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-windres.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/4.3.4/CMakeCCompiler.cmake CMakeFiles/4.3.4/CMakeCXXCompiler.cmake CMakeFiles/4.3.4/CMakeRCCompiler.cmake CMakeFiles/4.3.4/CMakeSystem.cmake: phony
+build C$:/Users/Avisha$ Srivastava/last-minute-life-saver/backend-cpp/CMakeLists.txt C$:/msys64/ucrt64/share/cmake/Modules/CMakeCInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeCXXInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeCommonLanguageInclude.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeGenericSystem.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeInitializeConfigs.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeLanguageInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeRCInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeSystemSpecificInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/GNU-C.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/GNU-CXX.cmake C$:/msys64/ucrt64/share/cmake/Modules/Compiler/GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/FindOpenSSL.cmake C$:/msys64/ucrt64/share/cmake/Modules/FindPackageHandleStandardArgs.cmake C$:/msys64/ucrt64/share/cmake/Modules/FindPackageMessage.cmake C$:/msys64/ucrt64/share/cmake/Modules/Internal/CMakeCLinkerInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/Internal/CMakeCXXLinkerInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/Internal/CMakeCommonLinkerInformation.cmake C$:/msys64/ucrt64/share/cmake/Modules/Linker/GNU-C.cmake C$:/msys64/ucrt64/share/cmake/Modules/Linker/GNU-CXX.cmake C$:/msys64/ucrt64/share/cmake/Modules/Linker/GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Linker/GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Linker/Windows-GNU-C.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Linker/Windows-GNU-CXX.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Linker/Windows-GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-C.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-CXX.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-Initialize.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows-windres.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/Windows.cmake C$:/msys64/ucrt64/share/cmake/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/4.3.4/CMakeCCompiler.cmake CMakeFiles/4.3.4/CMakeCXXCompiler.cmake CMakeFiles/4.3.4/CMakeRCCompiler.cmake CMakeFiles/4.3.4/CMakeSystem.cmake: phony
 
 
 #############################################
