@@ -31,4 +31,6 @@ target_include_directories(app PRIVATE
 target_compile_definitions(app PRIVATE CPPHTTPLIB_OPENSSL_SUPPORT)
 if(WIN32)
     target_link_libraries(app ws2_32 crypt32 OpenSSL::SSL OpenSSL::Crypto)
+else()
+    target_link_libraries(app OpenSSL::SSL OpenSSL::Crypto)
 endif()
