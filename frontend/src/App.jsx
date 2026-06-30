@@ -10,7 +10,7 @@ import {
   FaCalendarAlt
 } from "react-icons/fa";
 
-const API_URL = "http://localhost:8080";
+const API_URL = "https://last-minute-life-saver-1544232260.asia-south1.run.app";
 
 function App() {
   const [tasks, setTasks] = useState([]);
@@ -18,7 +18,15 @@ function App() {
   const [priority, setPriority] = useState([]);
   const [dayPlan, setDayPlan] = useState(null);
   const [aiPlan, setAiPlan] = useState("");
+  const hour = new Date().getHours();
+  let greeting = "Good Evening";
+  if (hour < 12) greeting = "Good Morning";
+  else if (hour < 17) greeting = "Good Afternoon";
 
+  const completedPercent=
+    analytics.totalTasks >0 
+      ? Math.round((analytics.completed / analytics.totalTasks)*100)
+      : 0;
 
   const [form, setForm] = useState({
     title: "",
@@ -75,19 +83,60 @@ function App() {
     setDayPlan(res.data);
   };
 
+  const quotes = [
+    "Small progress every day leads to big achievements.",
+    "Focus on progress, not perfection.",
+    "Today's effort is tomorrow's success.",
+    "Beat procrastination one task at a time.",
+    "Success is built one completed task at a time."
+  ];
+  const quote = quotes[new Date().getDate() % quotes.length];
+
+  const totalHours = tasks.reduce(
+    (sum, task) => sum + Number(task.estimatedHours || 0),
+    0
+  );
+  const highPriority = tasks.filter(
+    (task) => task.importance === "High"
+  ).length;
+  const nextTask =
+    priority.length > 0 ? priority[0].title : "No tasks available";
+  
+  const focusTask =
+    priority.length > 0
+      ? priority[0]
+      : tasks.find((t) => t.status !== "Completed");
+
   return (
     <div className="app">
-      <div className="hero">
+      <section className="hero">
         <h1>🚀 Last-Minute Life Saver</h1>
-        <p>Your AI Productivity Companion</p>
-      </div>
+        <p>
+          AI-powered productivity planner built for students.
+        </p>
+        <div className="badge">
+          🤖 Powered by Gemini AI + Smart Priority Engine
+          </div>
+      </section>
     <h2 style={{ marginTop: "25px" }}>
-      👋 Welcome back, Avisha!
+      👋{greeting}!
     </h2>
 
-<p className="subtitle">
-  Let AI help you stay ahead of your deadlines.
-</p>
+<p className="subtitle">{quote}</p>
+{focusTask && (
+  <section className="focus-card">
+    <h2>🎯 Today's Focus</h2>
+    <h3>{focusTask.title}</h3>
+    <p>⏰ Estimated Time: {focusTask.estimatedHours} hrs</p>
+    <p>📅 Deadline: {focusTask.deadline}</p>
+    <p>⭐ Priority: {focusTask.importance}</p>
+    <div className="focus-tip">
+      🤖 AI Recommendation:
+      <br />
+      Complete this task first to reduce deadline risk and improve today's productivity.
+    </div>
+  </section>
+)}
 
       <section className="card">
         <h2>Add Task</h2>
@@ -140,17 +189,65 @@ function App() {
       </section>
 
       <section className="stats">
-        <div>Total: {analytics.totalTasks ?? 0}</div>
-        <div>Completed: {analytics.completed ?? 0}</div>
-        <div>Pending: {analytics.pending ?? 0}</div>
-        <div>Skipped: {analytics.skipped ?? 0}</div>
-        <div>Score: {analytics.productivityScore ?? 0}%</div>
+        <div>
+          <span>📋</span>
+          <h3>{analytics.totalTasks ?? 0}</h3>
+          <p>Total Tasks</p>
+        </div>
+        <div>
+          <span>✅</span>
+          <h3>{analytics.completed ?? 0}</h3>
+          <p>Completed</p>
+        </div>
+        <div>
+          <span>⏳</span>
+          <h3>{analytics.pending ?? 0}</h3>
+          <p>Pending</p>
+        </div>
+
+        <div>
+          <span>⏭️</span>
+          <h3>{analytics.skipped ?? 0}</h3>
+          <p>Skipped</p>
+        </div>
+
+        <div>
+          <span>🔥</span>
+          <h3>{completedPercent}%</h3>
+          <p>Productivity</p>
+        </div>
+      </section>
+      <section className="card">
+        <h2>📈 Productivity Progress</h2>
+        <div className="progress-bar">
+          <div
+            className="progress-fill"
+            style={{ width: `${completedPercent}%` }}
+          ></div>
+        </div>
+        <p className="progress-text">
+          You have completed {completedPercent}% of your tasks.
+        </p>
       </section>
 
       <section className="card">
         <h2>Tasks</h2>
+        {tasks.length === 0 && (
+          <p className="empty-state">
+            📅 No tasks yet. Add your first task and let AI plan your day.
+          </p>
+        )}
         {tasks.map((task) => (
-          <div className="task" key={task.id}>
+          <div
+            className={`task ${
+              task.importance === "High"
+              ? "high"
+              : task.importance === "Medium"
+              ? "medium"
+              : "low"
+            }`}
+            key={task.id}
+          >
             <div>
               <h3>{task.title}</h3>
               <p>
@@ -179,6 +276,11 @@ function App() {
         <h2>
             <FaRobot /> AI Productivity Coach
         </h2>
+        {priority.length === 0 && (
+          <p className="empty-state">
+            🤖 Add tasks to see AI priority recommendations.
+          </p>
+        )}
         {priority.map((item) => (
           <div className="priority" key={item.id}>
             <h3>{item.title}</h3>
@@ -214,6 +316,26 @@ function App() {
         ))}
       </section>
 
+      <section className="card">
+        <h2>🤖 AI Insights</h2>
+        <div className="insights">
+          <div className="insight">
+            📋 <strong>{tasks.length}</strong> tasks scheduled
+          </div>
+          <div className="insight">
+            <strong>{totalHours}</strong> hours remaining
+          </div>
+          <div className="insight">
+            🔥 <strong>{highPriority}</strong> high priority tasks
+          </div>
+          <div className="insight">
+            🎯 Suggested next task:
+            <br />
+            <strong>{nextTask}</strong>
+          </div>
+        </div>
+      </section>
+
       {dayPlan && (
         <section className="card">
           <h2>🤖 Today's AI Plan</h2>
@@ -229,6 +351,9 @@ function App() {
           ))}
         </section>
       )}
+      <footer>
+        Built with ❤️ using React, C++, Gemini AI and Google Cloud
+      </footer>
     </div>
   );
 }

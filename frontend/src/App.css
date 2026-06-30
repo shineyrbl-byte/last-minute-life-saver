@@ -1,8 +1,8 @@
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #0f172a;
-  color: white;
+body{
+    margin:0;
+    font-family:Inter,sans-serif;
+    background:linear-gradient(135deg,#0f172a,#1e293b,#312e81);
+    min-height:100vh;
 }
 
 .app {
@@ -21,11 +21,14 @@ h1 {
   margin-bottom: 30px;
 }
 
-.card {
-  background: #1e293b;
-  padding: 24px;
-  border-radius: 16px;
-  margin-bottom: 24px;
+.card{
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(16px);
+    border:1px solid rgba(255,255,255,.12);
+    border-radius:20px;
+    padding:25px;
+    margin:25px 0;
+    box-shadow:0 15px 40px rgba(0,0,0,.3);
 }
 
 .form {
@@ -42,11 +45,26 @@ button {
   border: none;
 }
 
-button {
-  background: #7c3aed;
-  color: white;
-  cursor: pointer;
-  font-weight: bold;
+button{
+
+    transition:.25s;
+
+    cursor:pointer;
+
+    border:none;
+
+    border-radius:12px;
+
+    font-weight:bold;
+
+}
+
+button:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:0 10px 30px rgba(0,0,0,.25);
+
 }
 
 .stats {
@@ -72,10 +90,22 @@ button {
   margin-bottom: 12px;
 }
 
-.task {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.task{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:20px;
+
+    margin:18px 0;
+
+    border-radius:18px;
+
+    background:rgba(255,255,255,.08);
+
+    backdrop-filter:blur(10px);
+
+    transition:.3s;
 }
 
 .actions {
@@ -100,12 +130,6 @@ button {
   border-left: 6px solid #2563eb;
 }
 
-button:hover {
-  opacity: 0.9;
-  transform: scale(1.03);
-  transition: 0.2s;
-}
-
 .ai-button {
   margin-top: 15px;
   background: linear-gradient(135deg, #7c3aed, #2563eb);
@@ -117,10 +141,12 @@ button:hover {
   cursor: pointer;
   width: 100%;
   transition: 0.2s;
+  box-shadow: 0 0 25px rgba(124,58,237,.25);
 }
 
 .ai-button:hover {
-  transform: translateY(-2px);
+  transform:scale(1.01);
+  transition:.3s;
   box-shadow: 0 5px 15px rgba(124, 58, 237, 0.4);
 }
 
@@ -150,4 +176,174 @@ button:hover {
 
 .priority h3 {
   color: #ffffff;
+}
+
+.stats div span {
+  font-size: 26px;
+}
+
+.stats div h3 {
+  margin: 8px 0 4px;
+  font-size: 28px;
+}
+
+.stats div p {
+  margin: 0;
+  color: #cbd5e1;
+  font-size: 14px;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 18px;
+  background: #334155;
+  border-radius: 999px;
+  overflow: hidden;
+  margin-top: 16px;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(135deg, #7c3aed, #2563eb);
+  border-radius: 999px;
+  transition: width 0.4s ease;
+}
+
+.progress-text {
+  color: #cbd5e1;
+  margin-top: 12px;
+}
+
+.empty-state {
+  text-align: center;
+  color: #94a3b8;
+  padding: 20px;
+  font-size: 16px;
+}
+
+.task-card.high {
+  border-left: 6px solid #ef4444;
+}
+
+.task-card.medium {
+  border-left: 6px solid #f59e0b;
+}
+
+.task-card.low {
+  border-left: 6px solid #22c55e;
+}
+
+.task-card {
+  transition: all 0.3s ease;
+}
+
+.task-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0,0,0,.35);
+}
+
+.task.high {
+  border-left: 6px solid #ef4444;
+}
+
+.task.medium {
+  border-left: 6px solid #f59e0b;
+}
+
+.task.low {
+  border-left: 6px solid #22c55e;
+}
+
+.task {
+  transition: all 0.3s ease;
+}
+
+.task:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.35);
+}
+
+.insights{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:18px;
+    margin-top:20px;
+}
+
+.insight{
+    background:#344054;
+    border-radius:14px;
+    padding:18px;
+    font-size:16px;
+    transition:.25s;
+}
+
+.insight:hover{
+    transform:translateY(-4px);
+    background:#42526b;
+}
+
+.focus-card{
+    margin:30px 0;
+    padding:25px;
+    border-radius:20px;
+    background:linear-gradient(135deg,#7c3aed,#2563eb);
+    color:white;
+    box-shadow:0 15px 40px rgba(0,0,0,.35);
+}
+
+.focus-card h2{
+    margin-bottom:15px;
+}
+
+.focus-card h3{
+    font-size:28px;
+    margin-bottom:12px;
+}
+
+.focus-card p{
+    margin:8px 0;
+}
+
+.focus-tip{
+    margin-top:18px;
+    background:rgba(255,255,255,.15);
+    padding:15px;
+    border-radius:12px;
+}
+
+.hero{
+
+text-align:center;
+
+padding:45px 20px;
+
+}
+
+.hero h1{
+
+font-size:48px;
+
+margin-bottom:10px;
+
+color:white;
+
+}
+
+.hero p{
+
+font-size:18px;
+
+color:#cbd5e1;
+
+}
+
+footer{
+
+text-align:center;
+
+margin:50px 0 20px;
+
+color:#94a3b8;
+
 }
